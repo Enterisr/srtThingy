@@ -29,8 +29,10 @@ class FileNotifier:
         new_videos = []
         for root,dirs,files in os.walk(path):
             for name in files:
-                if name+"\n" not in self.existing_movies and self.check_if_valid_extension(name):
-                    new_videos.append(name)
+                file_with_path = os.path.join(root, name)
+                if file_with_path+'\n' not in self.existing_movies and self.check_if_valid_extension(name):
+                    new_videos.append(file_with_path)
+                    print(file_with_path)
             for dir in dirs:
                 new_videos_from_dir = self.get_new_videos(dir)
                 new_videos.extend(new_videos_from_dir)
@@ -47,6 +49,10 @@ if __name__ == "__main__":
     notifier = FileNotifier()
     new_videos = notifier.get_new_videos()
     notifier.write_new_videos_to_file(new_videos)
-    for video in new_videos:        
+    for video in new_videos:
+        video.replace("\n","")        
         editor = VideoEditor(video)
+        subs_name = editor.fetch_subtitles()
+        sub_file_path = os.path.join(os.getcwd(), subs_name)
+        editor.add_subtitles(video, sub_file_path)
         

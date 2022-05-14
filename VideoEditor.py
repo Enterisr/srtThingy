@@ -14,22 +14,28 @@ generator = lambda txt:TextClip(txt, font='Arial', fontsize=24, color='white')
 
 class VideoEditor:
     
-    def __init__(self,file):
-        self.file = file
-        PARAMS = {"query":file}
-        r = requests.get(url=URL,params=PARAMS,headers=headers)
-        srt_file = r.json()["data"][0]["attributes"]["files"][0]
-        srt_file_name = srt_file["file_name"]
-        srt_file_id = srt_file["file_id"]
-        print(f"Found subtitles for {file}: {srt_file_name}")
-        body = {"file_id" : srt_file_id}
-        download_url = requests.post(DOWNLOAD_LINK_REQ, data=json.dumps(body), headers=headers).json()
-        print(download_url)
+    def __init__(self, file):
+        self.file = os.path.basename(file)
 
-    """def add_subtitles(self,file:str):
-        ffmpeg
-        .input(file)
-        .filter("subtitles", "")"""
+    def fetch_subtitles(self) -> str:
+        PARAMS = {"query":self.file}
+        r = requests.get(url=URL,params=PARAMS,headers=headers)
+        srt_file_obj = r.json()["data"][0]["attributes"]["files"][0]
+        srt_file_name = srt_file_obj["file_name"]
+        srt_file_id = srt_file_obj["file_id"]
+        print(f"Found subtitles for {self.file}: {srt_file_name}")
+        body = {"file_id" : srt_file_id}
+        download_url = requests.post(DOWNLOAD_LINK_REQ, data=json.dumps(body), headers=headers).json()["link"]
+        with open(srt_file_name, "wt") as srt_file:
+            downloaded_file = requests.get(download_url).text
+            srt_file.write(downloaded_file)
+        return srt_file_name
+
+    def add_subtitles(self,file_path:str, subs_file:str):
+        print(file_path)
+        print(subs_file)
+        new_file_name = file_path.replace(".mp4","__subbed__.mp4")
+        ffmpeg.input(file_path).output(new_file_name).run()
 
     #fetch_subtitles(self,)
 
