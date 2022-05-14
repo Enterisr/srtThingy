@@ -1,22 +1,24 @@
 import os
 
+from VideoEditor import VideoEditor
+
 PATH = "C:\\Users\\Drunktolstoy\\Videos"
 EXCEPTABLE_EXTENSIONS = ["mp4"]
-
+CACHE_FILE = "movies.txt"
 class FileNotifier:
 
     def __init__(self,path=PATH):
         self.path = path
         self.existing_movies = []
         try:
-            with open("movies.txt","r+") as exisiting_movies:
+            with open(CACHE_FILE,"r+") as exisiting_movies:
                     self.existing_movies = exisiting_movies.readlines()
         except FileNotFoundError:
-            with open("movies.txt","w") as file:
+            with open(CACHE_FILE,"w") as file:
                 file.write('')
 
     def write_new_videos_to_file(self,new_videos):
-         with open("movies.txt","a+t") as exisiting_movies:
+         with open(CACHE_FILE,"a+t") as exisiting_movies:
             for video in new_videos:
                 _video = video+"\n"
                 exisiting_movies.write(_video)
@@ -45,3 +47,6 @@ if __name__ == "__main__":
     notifier = FileNotifier()
     new_videos = notifier.get_new_videos()
     notifier.write_new_videos_to_file(new_videos)
+    for video in new_videos:        
+        editor = VideoEditor(video)
+        
