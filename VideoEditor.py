@@ -1,6 +1,7 @@
 import ffmpeg
 import requests
 import os
+import json
 from dotenv import load_dotenv
 
 
@@ -19,8 +20,11 @@ class VideoEditor:
         r = requests.get(url=URL,params=PARAMS,headers=headers)
         srt_file = r.json()["data"][0]["attributes"]["files"][0]
         srt_file_name = srt_file["file_name"]
+        srt_file_id = srt_file["file_id"]
         print(f"Found subtitles for {file}: {srt_file_name}")
-        #download_link_body = { "file_id":  }
+        body = {"file_id" : srt_file_id}
+        download_url = requests.post(DOWNLOAD_LINK_REQ, data=json.dumps(body), headers=headers).json()
+        print(download_url)
 
     """def add_subtitles(self,file:str):
         ffmpeg
