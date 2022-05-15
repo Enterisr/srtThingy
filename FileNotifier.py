@@ -40,7 +40,7 @@ class FileNotifier:
     
     def check_if_valid_extension(self, file:str):
         for exntension in EXCEPTABLE_EXTENSIONS:
-            if file.endswith(exntension):
+            if file.endswith(exntension) and file.count("__subbed__") == 0:
                 return True
         return False
 
@@ -54,5 +54,6 @@ if __name__ == "__main__":
         editor = VideoEditor(video)
         subs_name = editor.fetch_subtitles()
         sub_file_path = os.path.join(os.getcwd(), subs_name)
-        editor.add_subtitles(video, sub_file_path)
+        editor.add_subtitles(video, subs_name)
+        os.system('TASKKILL /F /IM ffmpeg.exe   ')
         

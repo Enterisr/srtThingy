@@ -32,10 +32,13 @@ class VideoEditor:
         return srt_file_name
 
     def add_subtitles(self,file_path:str, subs_file:str):
-        print(file_path)
-        print(subs_file)
+        subs_file = subs_file
         new_file_name = file_path.replace(".mp4","__subbed__.mp4")
-        ffmpeg.input(file_path).output(new_file_name).run()
+        #todo: do this with subtitles, use gpu 
+        video = ffmpeg.input(file_path)
+        audio = video.audio
+        ffmpeg.concat(video.filter("subtitles", subs_file), audio, v=1, a=1).output(new_file_name).run()
+        #ffmpeg.input(file_path).filter("subtitles",subs_file).output(new_file_name).run()
 
     #fetch_subtitles(self,)
 
