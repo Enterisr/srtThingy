@@ -1,8 +1,4 @@
 import subprocess
-import win32serviceutil
-import servicemanager
-import win32event
-import win32service
 import socket
 import os
 TASK_NAME = "SubsWriter"

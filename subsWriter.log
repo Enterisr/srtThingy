@@ -1,0 +1,38 @@
+2022-05-28 17:40:22,506 found new movie: C:\Users\Drunktolstoy\Videos\Chicago (2002) [1080p] [BluRay] [5.1] [YTS.MX]\Chicago.2002.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4
+2022-05-28 17:40:22,506 found new movie: C:\Users\Drunktolstoy\Videos\Chinatown (1974) [REPACK] [1080p] [BluRay] [5.1] [YTS.MX]\Chinatown.1974.REPACK.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4
+2022-05-28 17:40:22,507 found new movie: C:\Users\Drunktolstoy\Videos\Grand Hotel (1932) [1080p] [YTS.AG]\Grand.Hotel.1932.1080p.BluRay.x264-[YTS.AG].mp4
+2022-05-28 17:40:22,507 found new movie: C:\Users\Drunktolstoy\Videos\La Grande Vadrouille (1966) [1080p] [BluRay] [YTS.MX]\La.Grande.Vadrouille.1966.1080p.BluRay.x264.AAC-[YTS.MX].mp4
+2022-05-28 17:40:22,507 found new movie: C:\Users\Drunktolstoy\Videos\Moontide (1942) [1080p] [WEBRip] [YTS.MX]\Moontide.1942.1080p.WEBRip.x264.AAC-[YTS.MX].mp4
+2022-05-28 17:40:22,508 found new movie: C:\Users\Drunktolstoy\Videos\Sobache Serdtse (1988) [1080p] [BluRay] [5.1] [YTS.MX]\Sobache.Serdtse.1988.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4
+2022-05-28 17:40:22,509 found new movie: C:\Users\Drunktolstoy\Videos\The Postman Always Rings Twice (1946) [BluRay] [1080p] [YTS.AM]\The.Postman.Always.Rings.Twice.1946.1080p.BluRay.x264-[YTS.AM].mp4
+2022-05-28 17:40:22,509 found new movie: C:\Users\Drunktolstoy\Videos\The Treasure Of The Sierra Madre (1948) [1080p] [YTS.AG]\The.Treasure.Of.The.Sierra.Madre.1948.1080p.BluRay.x264-[YTS.AG].mp4
+2022-05-28 17:40:22,509 found new movie: C:\Users\Drunktolstoy\Videos\thefe\The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4
+2022-05-28 17:40:22,510 found new movie: C:\Users\Drunktolstoy\Videos\Zerograd (1988) [1080p] [BluRay] [5.1] [YTS.MX]\Zerograd.1988.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4
+2022-05-28 17:40:28,279 Found subtitles for Chicago.2002.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4: Chicago.srt in open subtitles
+2022-05-28 17:40:35,639 there was an error while trying to stick subs to file
+2022-05-28 17:40:35,639 ffmpeg error (see stderr output for detail)
+2022-05-28 17:41:14,641 found new movie: C:\Users\Drunktolstoy\Videos\thefe\The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4
+2022-05-28 17:41:14,642 found new movie: C:\Users\Drunktolstoy\Videos\Zerograd (1988) [1080p] [BluRay] [5.1] [YTS.MX]\Zerograd.1988.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4
+2022-05-28 17:41:15,442 Found subtitles for The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4: The Phenix City Story.1955.EN.srt in open subtitles
+2022-05-28 17:45:20,104 found new movie: C:\Users\Drunktolstoy\Videos\thefe\The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4
+2022-05-28 17:45:20,188 Found subtitles for The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4: The Phenix City Story.1955.EN.srt in open subtitles
+2022-05-28 17:45:26,177 there was an error while trying to stick subs to file
+2022-05-28 17:45:26,177 ffmpeg error (see stderr output for detail)
+2022-05-28 17:46:09,230 found new movie: C:\Users\Drunktolstoy\Videos\thefe\The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4
+2022-05-28 17:46:09,292 Found subtitles for The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4: The Phenix City Story.1955.EN.srt in open subtitles
+2022-05-28 17:46:13,990 there was an error while trying to stick subs to file
+2022-05-28 17:46:13,990 ffmpeg error (see stderr output for detail)
+2022-05-28 17:47:32,796 INFO found new movie: C:\Users\Drunktolstoy\Videos\thefe\The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4
+2022-05-28 17:47:32,863 INFO Found subtitles for The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4: The Phenix City Story.1955.EN.srt in open subtitles
+2022-05-28 17:47:37,900 ERROR there was an error while trying to stick subs to file
+2022-05-28 17:47:37,900 ERROR ffmpeg error (see stderr output for detail)
+2022-05-28 17:48:57,991 INFO found new movie: C:\Users\Drunktolstoy\Videos\thefe\The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4
+2022-05-28 17:48:58,051 INFO Found subtitles for The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4: The Phenix City Story.1955.EN.srt in open subtitles
+2022-05-28 17:49:01,914 ERROR there was an error while trying to stick subs to file
+2022-05-28 17:49:01,915 ERROR ffmpeg error (see stderr output for detail)
+2022-05-28 17:51:50,425 INFO found new movie: C:\Users\Drunktolstoy\Videos\thefe\The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4
+2022-05-28 17:51:50,553 INFO Found subtitles for The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4: The Phenix City Story.1955.EN.srt in open subtitles
+2022-05-28 17:51:57,043 INFO found new movie: C:\Users\Drunktolstoy\Videos\thefe\The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4
+2022-05-28 17:51:57,103 INFO Found subtitles for The.Phenix.City.Story.1955.1080p.WEBRip.x264.AAC-[YTS.MX].mp4: The Phenix City Story.1955.EN.srt in open subtitles
+2022-05-28 17:52:07,738 ERROR there was an error while trying to stick subs to file
+2022-05-28 17:52:07,738 ERROR ffmpeg error (see stderr output for detail)
